@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Banner de Preço</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+      integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+      crossorigin="anonymous"
+    />
+    <style type="text/css">
+      body {
+        background-color: whitesmoke;
+      }
+      #main {
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        align-items: center;
+
+        margin: 50px;
+      }
+
+      .form {
+        width: 100%;
+      }
+
+      #canvas {
+        margin: 30px;
+      }
+
+      canvas {
+        background-color: white;
+        border: 2px solid steelblue;
+        border-radius: 5px;
+      }
+    </style>
+  </head>
+  <body onload="init()">
+    <div id="main" class="container">
+      <div id="canvas">
+        <canvas id="price-banner" width="720" height="500"></canvas>
+      </div>
+      <div class="form">
+        <div class="form-group">
+          <input
+            placeholder="Produto"
+            class="form-control form-control-lg"
+            id="label"
+            type="text"
+          />
+        </div>
+        <div class="form-group">
+          <input
+            placeholder="Preço"
+            class="form-control form-control-lg"
+            id="price"
+            type="text"
+          />
+        </div>
+        <button class="btn-lg btn-primary btn-block" id="create" type="button">
+          Criar banner
+        </button>
+      </div>
+    </div>
+
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+      integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+      crossorigin="anonymous"
+    ></script>
+    <script src="scripts.js"></script>
+  </body>
+</html>
